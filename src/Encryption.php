@@ -38,8 +38,14 @@ class Encryption
 
   public function decrypt($data)
   {
+
     $data = explode('.', $data);
     $decryption = openssl_decrypt($data[0], $this->ciphering, $this->passphrase, $this->options, hex2bin($data[1]), $this->tag, $this->aad);
+
+    if (empty($decryption)) {
+      throw new \Exception('Decryption failed, invalid conf or passphrase');
+    }
+
     return $decryption;
   }
 }
