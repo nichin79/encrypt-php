@@ -1,0 +1,18 @@
+{
+    "name": "nichin79/encrypt-php",
+    "description": "Basic encrypt/decrypt for PHP",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nicklas H",
+            "email": "nicklas@imagineit.nu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+      "psr-4": {
+        "Nichin79\\Encryption\\": "src/"
+      }
+    },
+    "require": {}
+}
