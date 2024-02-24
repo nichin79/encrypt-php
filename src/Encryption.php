@@ -3,7 +3,7 @@ namespace Nichin79\Encryption;
 
 class Encryption
 {
-  private string $ciphering = "BF-CBC";
+  private string $ciphering = "aes-256-cbc";
   private string $passphrase;
   private int $options = 0;
   private int $iv_length;
